@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Cultura 17</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" media="none" onload="if(media!='all')media='all'" async>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet" async>
+    <style media="screen">
+    body{
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    /*2 face funks*/
+    @media only screen and (min-width: 320px) {
+      .face-funk{
+        position: relative;
+        width:100%;
+        height: 600px;
+        background: url(images/background.jpg);
+        overflow: hidden;
+        background-attachment: fixed;
+      }
+
+    }
+    @media only screen and (min-width: 720px) {
+      .face-funk{
+        -webkit-animation:200s scroll infinite linear;
+        animation:200s scroll infinite linear;
+      }
+    }
+    @-webkit-keyframes scroll{
+      100%{
+        background-position:0px -3000px;
+      }
+    }
+
+    @keyframes scroll{
+      100%{
+        background-position:0px -3000px;
+      }
+    }
+    /*Cultura logo*/
+
+    .culturalogo{
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 100%;
+      height: 30%;
+      text-align: center;
+
+    }
+
+    .shadowed {
+      -webkit-filter: drop-shadow(1px 1px .5px #fff);
+      -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=1, OffY=1, Color='white')";
+      filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=1, OffY=1, Color='white')"
+    }
+
+    /*Face funk logo*/
+    @media only screen and (min-width: 320px) {
+
+      .logo{
+        position: absolute;
+        height: 300px;
+        width: 100%;
+        top: 40%;
+        background:url(images/2FFlongcolor.png);
+        background-size:80%, 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+    }
+    @media only screen and (min-width: 720px) {
+      .logo{
+        top: 50%;
+        background-size:70%, 60%;
+      }
+    }
+    @media only screen and (min-width: 900px) {
+      .logo{
+        top: 45%;
+        background-size:60%, 50%;
+      }
+    }
+
+    @media only screen and (min-width:320px){
+    .face{
+      position: absolute;
+      left:50%;
+      -webkit-transform: translate(-50%,0);
+              transform: translate(-50%,0);
+      bottom: -300px;
+      background: url(images/2ff-min.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: top center;
+      height: 500px;
+      width: 700px;
+      overflow: hidden;
+    }
+    }
+    @media only screen and (min-width:720px){
+      .face{
+          left:60%;
+    }
+    .face-funk{
+      height: 100vmin;
+    }
+    }
+    /*small lil indian*/
+    @media only screen and (min-width: 320px) {
+      .lil-indian{
+        width: 100%;
+        height: 300px;
+        background:#1C3144;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        position: relative;
+      }
+      .lil-indian .whitish{
+        background: white;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+      }
+    .lil-indian img{
+      position: absolute;
+      top: 60%;
+      left:50%;
+      -webkit-transform: translate(-50%,0);
+              transform: translate(-50%,0);
+      width: 45%;
+    }
+    .lil-indian p{
+      position: absolute;
+      top:0;
+      font-size: 16px;
+      color: #555;
+      background: white;
+      padding: 10px 20px;
+      z-index: 20;
+      box-shadow: 0px 10px 30px 1px rgba(10,10,40,0.2);
+    }
+    .lil-face{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: url(images/lilface.jpg);
+      background-size: contain;
+      background-repeat:no-repeat;
+      background-position: center 0px;
+      position: relative;
+    }
+
+    }
+
+    @media only screen and (min-width: 480px) {
+
+    .lil-indian{
+      height:350px;
+    }
+    .lil-indian img{
+      width: 40%;
+    }
+    .lil-indian .whitish{
+      width: 300px;
+      height: 300px;
+    }
+
+
+    }
+
+
+    .lil-face .lil-shade{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.3);
+      border-radius: 50%;
+    }
+
+    @media only screen and (min-width: 720px) {
+      .lil-indian{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        opacity: 1;
+      }
+      .lil-indian p{
+        top:-15px;
+        -webkit-transform: translate(-100%,-50%);
+                transform: translate(-100%,-50%);
+        opacity: 0;
+        -webkit-animation: comein 300ms forwards 2s ease-in;
+                animation: comein 300ms forwards 2s ease-in;
+      }
+      @-webkit-keyframes comein {
+        0%{
+          opacity: 0;
+          -webkit-transform: translate(-100%,-50%);
+                  transform: translate(-100%,-50%);
+        }
+        100%{
+          opacity: 1;
+          -webkit-transform: translate(-20%,-50%);
+                  transform: translate(-20%,-50%);
+        }
+      }
+      @keyframes comein {
+        0%{
+          opacity: 0;
+          -webkit-transform: translate(-100%,-50%);
+                  transform: translate(-100%,-50%);
+        }
+        100%{
+          opacity: 1;
+          -webkit-transform: translate(-20%,-50%);
+                  transform: translate(-20%,-50%);
+        }
+      }
+      .lil-indian .whitish{
+        height: 200px;
+        width: 200px;
+      }
+
+    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" media="none" onload="if(media!='all')media='all'" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="headliner">
+
+        <div class="face-funk">
+          <div class="culturalogo shadowed"><img src="images/Cultura.png" alt="Cultura" /></div>
+          <div class="logo shadowed"></div>
+          <div class="face"></div>
+          <div class="facetext"></div>
+        </div>
+        <div class="lil-indian">
+          <p>Opening Act !</p>
+          <div class="whitish">
+            <div class="lil-face"><div class="lil-shade"><img src="images/smi-logo.png" alt="small lil indian" /></div></div>
+          </div>
+        </div>
+    </div>
+
+
+      <div class="main-events">
+        <div class="m-event fashion">
+          <div class="thumb"><p>The devil wears prada</p></div>
+          <div class="context">
+            <div class="lead">Fashion Show</div>
+            <div class="para">Do you have the flair for fashion? The power to create magic on stage with those stellar designs. Live your dream to set fire on the ramp and make the heads turn. Let your attitude do the talking.</div>
+          </div>
+        </div>
+        <div class="m-event battle-bands">
+          <div class="thumb"><p>Live the beat</p></div>
+          <div class="context">
+            <div class="lead">Battle of Bands</div>
+            <div class="para">Get the Demon energy in you pepped up cause where else do you get the opportunity to share a stage with funk,metal,rap,pop,rock,techno and punk!</div>
+          </div>
+        </div>
+        <div class="m-event mad-ads">
+          <div class="thumb"><p>Let's Start the Drama</p></div>
+          <div class="context">
+            <div class="lead">Mad Ads</div>
+            <div class="para">Tired of those countries ads on TV? Do you find them boring? Think you can do better? Want to sell product like no one has ever tried before? Then stop thinking and start enacting because this is the time and place to act crazy and advertise.<br><br></div>
+          </div>
+        </div>
+        <div class="m-event western-dance">
+          <div class="thumb"><p>Kick in Crew</p></div>
+          <div class="context">
+            <div class="lead">Western Dance</div>
+            <div class="para">If grooving to the beats is in your genes, our stage is right where you belong. Register with us to showcase your talent and provide us with a feast of brilliant moves.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sunburn"></div>
+
+      <div class="space">
+        <div class="inner">
+        <div class="address">
+          <div class="map"></div>
+          <a href="https://goo.gl/YrkTX7" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>132, AECS Layout, ITPL Main Road, Kundalahalli, Brookefield, Bengaluru, Karnataka 560037</a>
+        </div>
+
+        <div class="connect">
+          <div class="smallcard small-event"><img src="images/symbol.svg" alt="events" /><a href="events.html">Compete Conquer Celebrate</a></div>
+          <div class="smallcard small-sponsor "><img src="images/money.svg" alt="sponsor" /><p>Our Partners</p></div>
+          <div class="smallcard small-brochure"><img src="images/folding-map.svg" alt="brochure" /><a href="content/Cultura 17 brochure.pdf" target="_blank">Download Brochure</a></div>
+          <div class="smallcard small-android"><img src="images/android.svg" alt="android-app" /><a href="https://play.google.com/store/apps/details?id=com.cmrit.cultura17" target="_blank">Experience the AR</a></div>
+          <div class="social">
+            <div class="fb"><a href="https://www.facebook.com/Cultura.cmrit/" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></div>
+            <div class="insta"><a href="https://www.instagram.com/cmritcultura/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></div>
+            <div class="youthub"><a href="https://www.youtube.com/channel/UCln6uzSuS0MDiEQtXj_Vcnw" target="_blank"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a></div>
+            <div class="twit"><a href="https://www.facebook.com/Cultura.cmrit/" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+      <div class="contact">
+      <div class="layer">
+        <h1>Contact us</h1>
+        <div class="ppl">
+        <div class="primary">
+          <div class="card">
+            <names><strong>Prachi Shukla</strong></names>
+            <des>Chief Coordinator</des>
+            <phone><i class="fa fa-phone" aria-hidden="true"></i>7259183568</phone>
+            <mail><i class="fa fa-envelope" aria-hidden="true"></i>prsh14cs@cmrit.ac.in</mail>
+          </div>
+          <div class="card">
+            <names><strong>Pratith Shetty</strong></names>
+            <des>Chief Event Coordinator</des>
+            <phone><i class="fa fa-phone" aria-hidden="true"></i>9880935068</phone>
+            <mail><i class="fa fa-envelope" aria-hidden="true"></i>prsy14cs@cmrit.ac.in</mail>
+          </div>
+          <div class="card">
+            <names><strong>Yogesh</strong></names>
+            <des>Chief Coordinator</des>
+            <phone><i class="fa fa-phone" aria-hidden="true"></i>8951532478</phone>
+            <mail><i class="fa fa-envelope" aria-hidden="true"></i>yosn14ee@cmrit.ac.in</mail>
+          </div>
+        </div>
+        <div class="secondary">
+          <div class="card">
+            <names><strong>Monica Raju</strong></names>
+            <des>Registrations</des>
+            <phone><i class="fa fa-phone" aria-hidden="true"></i>8197192277</phone>
+            <mail><i class="fa fa-envelope" aria-hidden="true"></i>mora14cs@cmrit.ac.in</mail>
+          </div>
+          <div class="card">
+            <names><strong>Manikanta</strong></names>
+            <des>Sponsorship Lead</des>
+            <phone><i class="fa fa-phone" aria-hidden="true"></i>8892669399</phone>
+            <mail><i class="fa fa-envelope" aria-hidden="true"></i>mamr14me@cmrit.ac.in</mail>
+          </div>
+        </div>
+        <div class="tertiary">
+          <div class="card">
+            <names><strong>Ashish Dahiya</strong></names>
+            <des>Campaigning</des>
+            <phone><i class="fa fa-phone" aria-hidden="true"></i>8762315794</phone>
+            <mail><i class="fa fa-envelope" aria-hidden="true"></i>asda14ee@cmrit.ac.in</mail>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="lead"><p>	&copy; Creative minds of CMR</p></div>
+        <div class="we">
+          <div>
+            <div class="imag"><img src="images/raj.jpg" alt="rajneesh" /></div>
+            <name>Rajneesh</name>
+            <des><strong>Web Designer</strong></des>
+          </div>
+          <div>
+            <div class="imag"><img src="images/umanga.jpg" alt="umanga" /></div>
+            <name>Umanga</name>
+            <des><strong>Web Developer</strong></des>
+          </div>
+        </div>
+    </div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast">
+      Your Request will be updated soon !
+    </div>
+
+    <div class="icon-bar">
+      <div class="menu" id='arrow'><i class="fa fa-arrow-circle-left poping" aria-hidden="true"></i></div>
+      <div class="icons" id="icon-set">
+      <ul>
+        <li><a href="#"><div id="bar-home"><i class="fa fa-home" aria-hidden="true"></i>Home</div></a></li>
+        <li><a href="events.html"><div id="bar-event"><i class="fa fa-flag" aria-hidden="true"></i>Events</div></a></li>
+        <li><a href="schedule.html"><div id ="bar-schedule"><i class="fa fa-calendar" aria-hidden="true"></i>Schedule</div></a></li>
+        <li><div class ="bar-sponsor"><i class="fa fa-inr" aria-hidden="true"></i>Partners</div></li>
+      </ul>
+      </div>
+    </div>
+    <!-- Sponsors -->
+    <div class="s-overlay">
+      <div class="sponsor-modal nano">
+      <div class="cross">X</div>
+      <h1>Sponsors</h1>
+      <div class="sponsor nano-content">
+        <div class="list-1">
+          <div class="title-s"><h2>Title Sponsor</h2>
+            <div class="elements "><a href="http://cmrsproperties.com/" target="_blank"><img src="images/sponsors/cmrs.jpeg" alt="CMRS Groups"></a><p>CMRS Groups</p></div>
+          </div>
+          <div class="co-s"><h2>Co-sponsor</h2>
+              <div class="elements "><a href="https://www.krazybee.com/" target="_blank"><img src="images/sponsors/krazybee.png" alt="Krazy Bee"></a><p>Krazy Bee</p></div>
+          </div>
+        </div>
+        <div class="list-2">
+          <div class="elements "><a href="#"><img src="images/sponsors/anno.jpg" alt=""></a></div>
+          <div class="elements "><a href="#"><img src="images/sponsors/lassi.png" alt=""></a></div>
+          <div class="elements "><a href="#"><img src="images/sponsors/aptech.jpg" alt=""></a></div>
+          <div class="elements "><a href="#"><img src="images/sponsors/biriyani-zone.jpg" alt=""></a></div>
+          <div class="elements "><a href="#"><img src="images/sponsors/EHealth_Tech.jpg" alt=""></a></div>
+          <div class="elements "><a href="#"><img src="images/sponsors/hairbitat.png" alt=""></a></div>
+          <div class="elements "><a href="#"><img src="images/sponsors/Boi.png" alt=""></a></div>
+          <div class="elements "><a href="#"><img src="images/sponsors/mas_chai.jpg" alt=""></a></div>
+          <div class="elements "><a href="#"><img src="images/sponsors/moriz.png" alt=""></a></div>
+          <div class="elements "><a href="#"><img src="images/sponsors/technocomm.png" alt=""></a></div>
+          <div class="elements "><a href="#"><img src="images/sponsors/irelief.png" alt=""></a></div>
+          <div class="elements "><a href="#"><img src="images/sponsors/burp.jpg" alt=""></a></div>
+          <div class="elements "><a href="#"><img src="images/sponsors/cognis.png"alt=""></a></div>
+          <div class="elements "><a href="#"><img src="images/sponsors/vani.jpg" alt=""></a></div>
+          <div class="elements "><a href="#"><img src="images/sponsors/jalaram.jpg" alt=""></a></div>
+          <div class="elements "><a href="#"><img src="images/sponsors/myplush.png"alt=""></a></div>
+          <div class="elements "><a href="#"><img src="images/sponsors/semicon.jpg" alt=""></a></div>
+        </div>
+        <div class="list-2">
+          <div class="elements "><a href="#"><img alt="" src="images/sponsors/redfm.jpg" /></a>Radio Partner</div>
+          <div class="elements "><a href="#"><img alt="" src="images/sponsors/ytv.png" /></a>Broadcast Partner</div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.nanoscroller.min.js"></script>
+    <script>
+    $(window).scroll(function(){
+
+      var wScroll = $(this).scrollTop();
+
+      $('.logo').css({
+        'transform' : 'translate(0px, '+ wScroll /4 +'%)'
+      })
+
+      $('.face').css({
+        'transform' : 'translate(-50%, -'+ wScroll /16 +'%)'
+      })
+
+    });
+    $('#arrow').click(function(){
+      $('.icon-bar').toggleClass("drag-it");
+      $('.menu').toggleClass("rotate-it");
+
+      var delay = -50;
+      $('#icon-set li').each(function() {
+        var $li = $(this);
+        setTimeout(function() {
+          $li.toggleClass('swipe');
+        }, delay+=100); // delay 100 ms
+      });
+    });
+    $('#bar-schedule').click(function(){
+      $('#toast').fadeIn(1000).delay(3000).fadeOut(1000);
+    });
+
+    $('.bar-sponsor, .small-sponsor').click(function() {
+      $('.s-overlay').slideDown(400);
+    });
+
+    $('.cross').click(function(){
+      $('.s-overlay').slideUp(400);
+    });
+$(document).ready(function(){
+  $(".nano").nanoScroller();
+});
+    </script>
+  </body>
+</html>

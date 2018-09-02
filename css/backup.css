@@ -1,0 +1,235 @@
+body{
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+@media only screen and (min-width:720px) {
+  .headliner{
+    /*height: 100vmin;*/
+  }
+}
+/*2 face funks*/
+
+.face-funk{
+  position: relative;
+  width:100%;
+  height: 600px;
+  background: url(../images/background.jpg);
+  -webkit-animation:200s scroll infinite linear;
+  -moz-animation:200s scroll infinite linear;
+  -o-animation:200s scroll infinite linear;
+  -ms-animation:200s scroll infinite linear;
+  animation:200s scroll infinite linear;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+@-webkit-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-moz-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-o-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-ms-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+/*Cultura logo*/
+
+.culturalogo{
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  text-align: center;
+
+}
+
+.shadowed {
+  -webkit-filter: drop-shadow(1px 1px .5px #fff);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=1, OffY=1, Color='white')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=1, OffY=1, Color='white')"
+}
+
+/*Face funk logo*/
+@media only screen and (min-width: 320px) {
+
+  .logo{
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    top: 40%;
+    background:url(../images/2FFlongcolor.png);
+    background-size:80%, 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+}
+@media only screen and (min-width: 720px) {
+  .logo{
+    top: 50%;
+    background-size:70%, 60%;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .logo{
+    top: 45%;
+    background-size:60%, 50%;
+  }
+}
+
+@media only screen and (min-width:320px){
+.face{
+  position: absolute;
+  left:50%;
+  transform: translate(-50%,0);
+  bottom: -300px;
+  background: url(../images/2ff-min.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  height: 500px;
+  width: 700px;
+  overflow: hidden;
+}
+}
+@media only screen and (min-width:720px){
+  .face{
+      left:60%;
+}
+.face-funk{
+  height: 100vmin;
+}
+}
+
+
+
+/*small lil indian*/
+
+
+@media only screen and (min-width: 320px) {
+  .lil-indian{
+    width: 100%;
+    height: 300px;
+    background:#1C3144;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
+  .lil-indian .whitish{
+    background: white;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+.lil-indian img{
+  position: absolute;
+  top: 60%;
+  left:50%;
+  transform: translate(-50%,0);
+  width: 45%;
+}
+.lil-indian p{
+  position: absolute;
+  top:0;
+  font-size: 16px;
+  color: #555;
+  background: white;
+  padding: 10px 20px;
+  z-index: 20;
+  box-shadow: 0px 10px 30px 1px rgba(10,10,40,0.2);
+}
+.lil-face{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: url(../images/lilface.jpg);
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: center 0px;
+  position: relative;
+}
+
+}
+
+@media only screen and (min-width: 480px) {
+
+.lil-indian{
+  height:350px;
+}
+.lil-indian img{
+  width: 40%;
+}
+.lil-indian .whitish{
+  width: 300px;
+  height: 300px;
+}
+
+
+}
+
+
+.lil-face .lil-shade{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.3);
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 720px) {
+  .lil-indian{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    opacity: 1;
+  }
+  .lil-indian p{
+    top:-15px;
+    transform: translate(-100%,-50%);
+    opacity: 0;
+    animation: comein 300ms forwards 2s ease-in;
+  }
+  @keyframes comein {
+    0%{
+      opacity: 0;
+      transform: translate(-100%,-50%);
+    }
+    100%{
+      opacity: 1;
+      transform: translate(-20%,-50%);
+    }
+  }
+  .lil-indian .whitish{
+    height: 200px;
+    width: 200px;
+  }
+
+}
